@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4AB1704B-33B1-31F4-944D-B771DD634358}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/cocos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3 -BE:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32 --check-stamp-file E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\2d\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\3d\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\audio\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\base\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\math\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\navmesh\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\network\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\physics\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\physics3d\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\platform\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\renderer\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\ui\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/cocos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3 -BE:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32 --check-stamp-file E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\2d\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\3d\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\audio\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\base\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\math\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\navmesh\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\network\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\physics\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\physics3d\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\platform\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\renderer\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\ui\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/cocos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3 -BE:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32 --check-stamp-file E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\2d\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\3d\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\audio\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\base\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\math\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\navmesh\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\network\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\physics\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\physics3d\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\platform\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\renderer\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\ui\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/cocos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3 -BE:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32 --check-stamp-file E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\2d\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\3d\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\audio\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\base\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\math\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\navmesh\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\network\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\physics\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\physics3d\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\platform\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\renderer\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\ui\CMakeLists.txt;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\ZERO_CHECK.vcxproj">
+      <Project>{0E617041-61E2-3884-B2C3-21C4528242EF}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{B971B863-29A8-336C-A068-9C7AEB960A3F}</Project>
+      <Name>cocos2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{D411DFA5-FC92-3E1C-BA44-DACC425D3B57}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{E9EC81F4-A281-398B-A768-229CF3F6DEDE}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{2661DE8D-38FD-3C21-A720-6B35DBFA96D1}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\engine\external\md5\ext_md5.vcxproj">
+      <Project>{D208292F-19A9-39C4-A57C-600F98DCA2DE}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{C4B20701-6270-3111-B824-47BF136D7E86}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\engine\external\recast\ext_recast.vcxproj">
+      <Project>{9BDBF29D-14B9-3260-A0A9-602BB84EE473}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{DFC3687F-8846-3159-890A-B19E52960DD1}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{C32F4D36-DE6A-3653-AE42-E169D98BEF3C}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{F084AC9E-C1D7-31F4-98FE-1B899ED69C37}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{97CB7F66-00EB-30C8-9124-438A9895352E}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\engine\external\external.vcxproj">
+      <Project>{4FB78496-E0E8-3C06-B723-00F4B2EAFE06}</Project>
+      <Name>external</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

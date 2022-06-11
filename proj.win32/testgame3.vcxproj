@@ -1,0 +1,887 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D150DCA6-CACE-3F5D-9584-B3AA05FD9C30}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>Win32</Platform>
+    <ProjectName>testgame3</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\bin\testgame3\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">testgame3.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">testgame3</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\bin\testgame3\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">testgame3.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">testgame3</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\bin\testgame3\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">testgame3.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">testgame3</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\bin\testgame3\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">testgame3.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">testgame3</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\Classes;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\audio\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\extensions;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\platform;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\editor-support;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\base;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\platform\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\recast\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\tinyxml2\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\xxhash\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\xxtea\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\clipper\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\edtaa3func\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\ConvertUTF\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\poly2tri\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\md5\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\unzip\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\Box2D\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\chipmunk\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\freetype2\include\win32\freetype2;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\bullet\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\bullet\include\bullet;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\jpeg\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\openssl\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\uv\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\webp\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\websockets\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\curl\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\png\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\gles\include\OGLES;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\icon\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\MP3Decoder\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\OggDecoder\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\OpenalSoft\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\glfw3\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\Classes;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\audio\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\extensions;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\platform;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\editor-support;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\base;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\platform\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\recast\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\tinyxml2\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\xxhash\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\xxtea\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\clipper\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\edtaa3func\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\ConvertUTF\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\poly2tri\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\md5\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\unzip\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\Box2D\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\chipmunk\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\freetype2\include\win32\freetype2;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\bullet\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\bullet\include\bullet;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\jpeg\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\openssl\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\uv\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\webp\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\websockets\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\curl\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\png\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\gles\include\OGLES;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\icon\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\MP3Decoder\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\OggDecoder\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\OpenalSoft\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\glfw3\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\Classes;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\audio\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\extensions;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\platform;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\editor-support;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\base;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\platform\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\recast\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\tinyxml2\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\xxhash\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\xxtea\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\clipper\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\edtaa3func\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\ConvertUTF\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\poly2tri\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\md5\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\unzip\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\Box2D\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\chipmunk\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\freetype2\include\win32\freetype2;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\bullet\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\bullet\include\bullet;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\jpeg\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\openssl\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\uv\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\webp\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\websockets\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\curl\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\png\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\gles\include\OGLES;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\icon\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\MP3Decoder\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\OggDecoder\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\OpenalSoft\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\glfw3\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>												</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/Debug/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/Debug/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/uv/prebuilt/win32/uv.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/Debug/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/websockets/prebuilt/win32/websockets.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/Debug/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/curl/prebuilt/win32/libcurl.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/Debug/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/Debug/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/Debug/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/Debug/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/Debug/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/Debug/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/Debug/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/Debug/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/Debug/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Debug\cocos2d.lib;lib\Debug\external.lib;..\cocos2d\external\Box2D\prebuilt\win32\debug\libbox2d.lib;..\cocos2d\external\chipmunk\prebuilt\win32\debug-lib\libchipmunk.lib;..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Debug\ext_recast.lib;..\cocos2d\external\bullet\prebuilt\win32\debug\libbullet.lib;..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Debug\ext_tinyxml2.lib;lib\Debug\ext_xxhash.lib;lib\Debug\ext_xxtea.lib;lib\Debug\ext_clipper.lib;lib\Debug\ext_edtaa3func.lib;lib\Debug\ext_convertUTF.lib;lib\Debug\ext_poly2tri.lib;lib\Debug\ext_md5.lib;..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Debug\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/Debug/testgame3.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/Debug/testgame3.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\Classes;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\audio\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\extensions;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\platform;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\editor-support;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\base;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\platform\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\recast\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\tinyxml2\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\xxhash\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\xxtea\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\clipper\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\edtaa3func\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\ConvertUTF\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\poly2tri\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\md5\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\unzip\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\Box2D\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\chipmunk\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\freetype2\include\win32\freetype2;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\bullet\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\bullet\include\bullet;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\jpeg\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\openssl\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\uv\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\webp\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\websockets\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\curl\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\png\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\gles\include\OGLES;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\icon\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\MP3Decoder\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\OggDecoder\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\OpenalSoft\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\glfw3\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\Classes;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\audio\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\extensions;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\platform;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\editor-support;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\base;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\platform\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\recast\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\tinyxml2\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\xxhash\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\xxtea\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\clipper\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\edtaa3func\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\ConvertUTF\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\poly2tri\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\md5\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\unzip\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\Box2D\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\chipmunk\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\freetype2\include\win32\freetype2;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\bullet\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\bullet\include\bullet;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\jpeg\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\openssl\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\uv\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\webp\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\websockets\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\curl\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\png\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\gles\include\OGLES;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\icon\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\MP3Decoder\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\OggDecoder\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\OpenalSoft\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\glfw3\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\Classes;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\audio\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\extensions;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\platform;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\editor-support;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\base;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\platform\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\recast\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\tinyxml2\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\xxhash\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\xxtea\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\clipper\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\edtaa3func\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\ConvertUTF\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\poly2tri\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\md5\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\unzip\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\Box2D\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\chipmunk\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\freetype2\include\win32\freetype2;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\bullet\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\bullet\include\bullet;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\jpeg\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\openssl\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\uv\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\webp\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\websockets\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\curl\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\png\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\gles\include\OGLES;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\icon\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\MP3Decoder\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\OggDecoder\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\OpenalSoft\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\glfw3\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>												</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/Release/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/Release/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/uv/prebuilt/win32/uv.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/Release/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/websockets/prebuilt/win32/websockets.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/Release/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/curl/prebuilt/win32/libcurl.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/Release/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/Release/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/Release/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/Release/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/Release/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/Release/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/Release/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/Release/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/Release/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Release\cocos2d.lib;lib\Release\external.lib;..\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;..\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Release\ext_recast.lib;..\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Release\ext_tinyxml2.lib;lib\Release\ext_xxhash.lib;lib\Release\ext_xxtea.lib;lib\Release\ext_clipper.lib;lib\Release\ext_edtaa3func.lib;lib\Release\ext_convertUTF.lib;lib\Release\ext_poly2tri.lib;lib\Release\ext_md5.lib;..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Release\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/Release/testgame3.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/Release/testgame3.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\Classes;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\audio\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\extensions;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\platform;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\editor-support;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\base;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\platform\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\recast\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\tinyxml2\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\xxhash\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\xxtea\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\clipper\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\edtaa3func\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\ConvertUTF\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\poly2tri\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\md5\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\unzip\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\Box2D\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\chipmunk\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\freetype2\include\win32\freetype2;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\bullet\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\bullet\include\bullet;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\jpeg\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\openssl\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\uv\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\webp\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\websockets\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\curl\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\png\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\gles\include\OGLES;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\icon\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\MP3Decoder\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\OggDecoder\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\OpenalSoft\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\glfw3\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\Classes;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\audio\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\extensions;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\platform;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\editor-support;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\base;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\platform\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\recast\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\tinyxml2\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\xxhash\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\xxtea\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\clipper\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\edtaa3func\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\ConvertUTF\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\poly2tri\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\md5\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\unzip\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\Box2D\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\chipmunk\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\freetype2\include\win32\freetype2;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\bullet\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\bullet\include\bullet;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\jpeg\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\openssl\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\uv\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\webp\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\websockets\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\curl\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\png\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\gles\include\OGLES;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\icon\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\MP3Decoder\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\OggDecoder\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\OpenalSoft\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\glfw3\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\Classes;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\audio\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\extensions;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\platform;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\editor-support;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\base;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\platform\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\recast\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\tinyxml2\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\xxhash\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\xxtea\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\clipper\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\edtaa3func\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\ConvertUTF\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\poly2tri\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\md5\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\unzip\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\Box2D\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\chipmunk\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\freetype2\include\win32\freetype2;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\bullet\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\bullet\include\bullet;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\jpeg\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\openssl\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\uv\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\webp\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\websockets\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\curl\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\png\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\gles\include\OGLES;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\icon\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\MP3Decoder\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\OggDecoder\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\OpenalSoft\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\glfw3\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>												</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/MinSizeRel/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/MinSizeRel/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/uv/prebuilt/win32/uv.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/MinSizeRel/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/websockets/prebuilt/win32/websockets.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/MinSizeRel/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/curl/prebuilt/win32/libcurl.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/MinSizeRel/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/MinSizeRel/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/MinSizeRel/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/MinSizeRel/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/MinSizeRel/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/MinSizeRel/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/MinSizeRel/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/MinSizeRel/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/MinSizeRel/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\MinSizeRel\cocos2d.lib;lib\MinSizeRel\external.lib;..\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;..\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\MinSizeRel\ext_recast.lib;..\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\MinSizeRel\ext_tinyxml2.lib;lib\MinSizeRel\ext_xxhash.lib;lib\MinSizeRel\ext_xxtea.lib;lib\MinSizeRel\ext_clipper.lib;lib\MinSizeRel\ext_edtaa3func.lib;lib\MinSizeRel\ext_convertUTF.lib;lib\MinSizeRel\ext_poly2tri.lib;lib\MinSizeRel\ext_md5.lib;..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\MinSizeRel\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/MinSizeRel/testgame3.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/MinSizeRel/testgame3.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\Classes;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\audio\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\extensions;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\platform;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\editor-support;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\base;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\platform\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\recast\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\tinyxml2\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\xxhash\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\xxtea\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\clipper\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\edtaa3func\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\ConvertUTF\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\poly2tri\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\md5\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\unzip\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\Box2D\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\chipmunk\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\freetype2\include\win32\freetype2;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\bullet\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\bullet\include\bullet;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\jpeg\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\openssl\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\uv\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\webp\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\websockets\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\curl\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\png\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\gles\include\OGLES;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\icon\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\MP3Decoder\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\OggDecoder\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\OpenalSoft\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\glfw3\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\Classes;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\audio\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\extensions;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\platform;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\editor-support;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\base;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\platform\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\recast\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\tinyxml2\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\xxhash\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\xxtea\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\clipper\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\edtaa3func\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\ConvertUTF\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\poly2tri\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\md5\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\unzip\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\Box2D\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\chipmunk\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\freetype2\include\win32\freetype2;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\bullet\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\bullet\include\bullet;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\jpeg\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\openssl\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\uv\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\webp\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\websockets\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\curl\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\png\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\gles\include\OGLES;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\icon\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\MP3Decoder\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\OggDecoder\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\OpenalSoft\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\glfw3\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\Classes;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\audio\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\extensions;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\platform;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\editor-support;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\base;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\platform\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\recast\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\tinyxml2\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\xxhash\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\xxtea\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\clipper\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\edtaa3func\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\ConvertUTF\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\poly2tri\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\md5\..;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\unzip\.;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\Box2D\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\chipmunk\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\freetype2\include\win32\freetype2;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\bullet\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\bullet\include\bullet;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\jpeg\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\openssl\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\uv\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\webp\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\websockets\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\curl\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\png\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\gles\include\OGLES;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\icon\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\MP3Decoder\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\OggDecoder\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\win32-specific\OpenalSoft\include;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\glfw3\include\win32;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>												</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/RelWithDebInfo/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/RelWithDebInfo/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/uv/prebuilt/win32/uv.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/RelWithDebInfo/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/websockets/prebuilt/win32/websockets.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/RelWithDebInfo/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/curl/prebuilt/win32/libcurl.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/RelWithDebInfo/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/RelWithDebInfo/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/RelWithDebInfo/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/RelWithDebInfo/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/RelWithDebInfo/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/RelWithDebInfo/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/RelWithDebInfo/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/RelWithDebInfo/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/RelWithDebInfo/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\RelWithDebInfo\cocos2d.lib;lib\RelWithDebInfo\external.lib;..\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;..\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\RelWithDebInfo\ext_recast.lib;..\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\RelWithDebInfo\ext_tinyxml2.lib;lib\RelWithDebInfo\ext_xxhash.lib;lib\RelWithDebInfo\ext_xxtea.lib;lib\RelWithDebInfo\ext_clipper.lib;lib\RelWithDebInfo\ext_edtaa3func.lib;lib\RelWithDebInfo\ext_convertUTF.lib;lib\RelWithDebInfo\ext_poly2tri.lib;lib\RelWithDebInfo\ext_md5.lib;..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\RelWithDebInfo\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/RelWithDebInfo/testgame3.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/bin/testgame3/RelWithDebInfo/testgame3.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3 -BE:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32 --check-stamp-file E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cmake\Modules\CocosBuildSet.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cmake\Modules\CocosConfigDefine.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cmake\Modules\CocosConfigDepend.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\CMakeFiles\3.23.2\CMakeCCompiler.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\CMakeFiles\3.23.2\CMakeCXXCompiler.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\CMakeFiles\3.23.2\CMakeRCCompiler.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\CMakeFiles\3.23.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3 -BE:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32 --check-stamp-file E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cmake\Modules\CocosBuildSet.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cmake\Modules\CocosConfigDefine.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cmake\Modules\CocosConfigDepend.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\CMakeFiles\3.23.2\CMakeCCompiler.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\CMakeFiles\3.23.2\CMakeCXXCompiler.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\CMakeFiles\3.23.2\CMakeRCCompiler.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\CMakeFiles\3.23.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3 -BE:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32 --check-stamp-file E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cmake\Modules\CocosBuildSet.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cmake\Modules\CocosConfigDefine.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cmake\Modules\CocosConfigDepend.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\CMakeFiles\3.23.2\CMakeCCompiler.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\CMakeFiles\3.23.2\CMakeCXXCompiler.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\CMakeFiles\3.23.2\CMakeRCCompiler.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\CMakeFiles\3.23.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3 -BE:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32 --check-stamp-file E:/Yandex.Disk/YandexDisk/programming/cocos2dx/testgame3/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cmake\Modules\CocosBuildSet.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cmake\Modules\CocosConfigDefine.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cmake\Modules\CocosConfigDepend.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\CMakeFiles\3.23.2\CMakeCCompiler.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\CMakeFiles\3.23.2\CMakeCXXCompiler.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\CMakeFiles\3.23.2\CMakeRCCompiler.cmake;E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\CMakeFiles\3.23.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\Classes\AppDelegate.h" />
+    <ClInclude Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\Classes\HelloWorldScene.h" />
+    <ClInclude Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\Classes\CustomVector.h" />
+    <ClInclude Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\main.h" />
+    <ClInclude Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\resource.h" />
+    <ClCompile Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\Classes\AppDelegate.cpp" />
+    <ClCompile Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\main.cpp" />
+    <ResourceCompile Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\game.rc" />
+    <ClInclude Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\Resources\CloseNormal.png" />
+    <ClInclude Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\Resources\CloseSelected.png" />
+    <ClInclude Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\Resources\HelloWorld.png" />
+    <ClInclude Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\Resources\file.txt" />
+    <ClInclude Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\Resources\fonts\Marker Felt.ttf" />
+    <ClInclude Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\Resources\fonts\arial.ttf" />
+    <ClInclude Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\Resources\res\.gitkeep" />
+    <ClCompile Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\cocos2d\cocos\precheader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\ZERO_CHECK.vcxproj">
+      <Project>{0E617041-61E2-3884-B2C3-21C4528242EF}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\SYNC_RESOURCE-testgame3.vcxproj">
+      <Project>{966853E7-8C59-3425-8A83-03FA18EE5CDF}</Project>
+      <Name>SYNC_RESOURCE-testgame3</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{B971B863-29A8-336C-A068-9C7AEB960A3F}</Project>
+      <Name>cocos2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{D411DFA5-FC92-3E1C-BA44-DACC425D3B57}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{E9EC81F4-A281-398B-A768-229CF3F6DEDE}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{2661DE8D-38FD-3C21-A720-6B35DBFA96D1}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\engine\external\md5\ext_md5.vcxproj">
+      <Project>{D208292F-19A9-39C4-A57C-600F98DCA2DE}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{C4B20701-6270-3111-B824-47BF136D7E86}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\engine\external\recast\ext_recast.vcxproj">
+      <Project>{9BDBF29D-14B9-3260-A0A9-602BB84EE473}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{DFC3687F-8846-3159-890A-B19E52960DD1}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{C32F4D36-DE6A-3653-AE42-E169D98BEF3C}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{F084AC9E-C1D7-31F4-98FE-1B899ED69C37}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{97CB7F66-00EB-30C8-9124-438A9895352E}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Yandex.Disk\YandexDisk\programming\cocos2dx\testgame3\proj.win32\engine\external\external.vcxproj">
+      <Project>{4FB78496-E0E8-3C06-B723-00F4B2EAFE06}</Project>
+      <Name>external</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
