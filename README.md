@@ -12,3 +12,10 @@ Composed of:
 + BackInsterter iterator.
 
 As a test, a ScrollView from Cocos 2dx is created and the output is directed to the console and to the ScrollView using the new iterators
+
+TODO:
++ erase - method;
++ insert - method;
++ emplace - method;
++ swap - method;
++ all constexpr methods.
